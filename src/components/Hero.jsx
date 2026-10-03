@@ -278,7 +278,7 @@ function Hero() {
         {/* Top */}
         <div className="flex items-start justify-between">
           <p className="hero-meta font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">
-            Graphic Designer
+            Video Editor
           </p>
 
           <p className="hero-meta hidden font-mono text-[10px] uppercase tracking-[0.2em] text-white/30 md:block">

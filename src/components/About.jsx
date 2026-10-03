@@ -125,7 +125,7 @@ export default function About() {
                       </h3>
 
                       <p className="mt-1 text-sm text-white/45">
-                        Graphic Designer
+                        Video Editor
                       </p>
                     </div>
 
@@ -216,7 +216,7 @@ export default function About() {
           className="mt-20 flex flex-col gap-4 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between"
         >
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-white/25">
-            Design / Motion / Storytelling
+            Design / Motion 
           </p>
 
           <a
