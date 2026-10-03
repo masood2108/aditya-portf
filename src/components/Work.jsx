@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import projects from "../data/projects";
 
 function Work() {
@@ -22,6 +23,18 @@ function Work() {
               Things I&apos;ve made.
             </h2>
           </div>
+
+          <Link
+            to="/work"
+            className="group hidden items-center gap-2 font-mono text-[10px] uppercase tracking-[0.15em] text-white/40 transition-colors hover:text-white md:flex"
+          >
+            View all work
+
+            <ArrowRight
+              size={13}
+              className="transition-transform duration-300 group-hover:translate-x-1"
+            />
+          </Link>
         </div>
       </div>
 
@@ -54,7 +67,6 @@ function Work() {
                 rel="noreferrer"
                 className="block"
               >
-                {/* Video */}
                 <div className="relative aspect-[9/16] overflow-hidden bg-[#151515]">
                   <video
                     src={project.video}
@@ -69,23 +81,19 @@ function Work() {
                     className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                   />
 
-                  {/* Overlay */}
                   <div className="pointer-events-none absolute inset-0 bg-black/0 transition-all duration-500 group-hover:bg-black/20" />
 
-                  {/* Category */}
                   <div className="pointer-events-none absolute bottom-5 left-5">
                     <span className="rounded-full bg-black/70 px-4 py-2 font-mono text-[9px] uppercase tracking-wider text-white backdrop-blur-md">
                       {project.category}
                     </span>
                   </div>
 
-                  {/* Arrow */}
                   <div className="pointer-events-none absolute bottom-5 right-5 flex h-11 w-11 items-center justify-center rounded-full bg-white text-black transition-transform duration-500 group-hover:rotate-45">
                     <ArrowUpRight size={16} />
                   </div>
                 </div>
 
-                {/* Info */}
                 <div className="mt-5 flex items-start justify-between gap-5">
                   <div>
                     <h3 className="text-xl tracking-[-0.03em]">
@@ -107,9 +115,29 @@ function Work() {
         </div>
       </div>
 
-      {/* Bottom info */}
-      <div className="mx-auto mt-8 flex max-w-[1500px] items-center justify-between px-5 md:px-8 lg:px-12">
-        <span className="font-mono text-[9px] text-white/20">Projects</span>
+      {/* Mobile + desktop CTA */}
+      <div className="mx-auto mt-14 max-w-[1500px] px-5 md:px-8 lg:px-12">
+        <Link
+          to="/work"
+          className="group flex items-center justify-between border-t border-white/10 pt-6"
+        >
+          <div>
+            <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/25">
+              Portfolio
+            </p>
+
+            <p className="mt-2 text-xl tracking-[-0.03em] text-white/70 transition-colors group-hover:text-white md:text-2xl">
+              View all projects
+            </p>
+          </div>
+
+          <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 transition-all duration-300 group-hover:border-white/30 group-hover:bg-white group-hover:text-black">
+            <ArrowUpRight
+              size={16}
+              className="transition-transform duration-300 group-hover:rotate-45"
+            />
+          </span>
+        </Link>
       </div>
     </section>
   );

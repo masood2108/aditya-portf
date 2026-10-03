@@ -1,0 +1,128 @@
+const allVideos = [
+  {
+    id: 1,
+    title: "Thinketh",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/PbIZflUU3Lw/maxresdefault.jpg",
+    link: "https://youtu.be/PbIZflUU3Lw?si=ixJSTB8uK6tgIk-b",
+  },
+  {
+    id: 2,
+    title: "Thinketh",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/BFP_3f0OyKE/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/BFP_3f0OyKE",
+  },
+  {
+    id: 3,
+    title: "Thinketh",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/idlz7Aw1fo4/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/idlz7Aw1fo4",
+  },
+  {
+    id: 4,
+    title: "Thinketh",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/LSu-I4Ws6Xc/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/LSu-I4Ws6Xc",
+  },
+  {
+    id: 5,
+    title: "Thinketh",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/YX12tilOAKQ/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/YX12tilOAKQ",
+  },
+  {
+    id: 6,
+    title: "Thinketh",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/qIwoSpOtJak/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/qIwoSpOtJak",
+  },
+
+  {
+    id: 7,
+    title: "Divyansh Bhardwaj",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/QMLe5nlmCrU/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/QMLe5nlmCrU",
+  },
+  {
+    id: 8,
+    title: "Divyansh Bhardwaj",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/altWiahN0WI/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/altWiahN0WI",
+  },
+  {
+    id: 9,
+    title: "Divyansh Bhardwaj",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/3MQJOsYgsLA/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/3MQJOsYgsLA",
+  },
+  {
+    id: 10,
+    title: "Divyansh Bhardwaj",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/9Z9eSKyqQM8/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/9Z9eSKyqQM8",
+  },
+  {
+    id: 11,
+    title: "Divyansh Bhardwaj",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/9DmBANXEOhA/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/9DmBANXEOhA",
+  },
+  {
+    id: 12,
+    title: "Divyansh Bhardwaj",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/qeOQ7yQd6do/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/qeOQ7yQd6do",
+  },
+  {
+    id: 13,
+    title: "Divyansh Bhardwaj",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/Xj6Ua-We71M/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/Xj6Ua-We71M",
+  },
+
+  {
+    id: 14,
+    title: "Tan Man Dhan",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/zdlLqL5Ln6E/maxresdefault.jpg",
+    link: "https://www.youtube.com/shorts/zdlLqL5Ln6E",
+  },
+
+  {
+    id: 15,
+    title: "Stable Money",
+    category: "Video Editing",
+    thumbnail: "https://img.youtube.com/vi/CGGPGxSwghk/maxresdefault.jpg",
+    link: "https://youtu.be/CGGPGxSwghk",
+  },
+{
+  id: 16,
+  title: "DBMC",
+  category: "Social Media",
+  thumbnail: "/images/dbmc.jpg",
+  video: "/videos/dbmc.mp4",
+  link: "https://www.instagram.com/reel/Dd_PUjdSmRR/",
+},
+
+{
+  id: 17,
+  title: "FastEMI Official",
+  category: "Social Media",
+  thumbnail: "/images/fastemi.jpg",
+  video: "/videos/fastemi.mp4",
+  link: "https://www.instagram.com/reel/DcLHVJ2I_hz/",
+},
+];
+export default allVideos;
