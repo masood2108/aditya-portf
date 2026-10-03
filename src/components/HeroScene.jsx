@@ -1,17 +1,21 @@
 import { Canvas, useFrame } from "@react-three/fiber";
+
 import {
   Float,
   RoundedBox,
   Text,
   Environment,
 } from "@react-three/drei";
+
 import {
   TbBrandAdobeAfterEffect,
   TbBrandAdobeIllustrator,
   TbBrandAdobePhotoshop,
   TbBrandAdobePremiere,
 } from "react-icons/tb";
+
 import { useEffect, useMemo, useRef, useState } from "react";
+
 import * as THREE from "three";
 
 const software = [
@@ -277,7 +281,6 @@ function Monitor({ activeIndex }) {
       floatingRange={[-0.035, 0.035]}
     >
       <group position={[0, 0.18, 0.8]}>
-        {/* Monitor */}
         <RoundedBox
           args={[2.4, 1.62, 0.17]}
           radius={0.13}
@@ -290,7 +293,6 @@ function Monitor({ activeIndex }) {
           />
         </RoundedBox>
 
-        {/* Screen */}
         <mesh position={[0, 0.02, 0.11]}>
           <planeGeometry args={[2.14, 1.35]} />
 
@@ -302,7 +304,6 @@ function Monitor({ activeIndex }) {
           />
         </mesh>
 
-        {/* Top line */}
         <mesh position={[0, 0.56, 0.125]}>
           <boxGeometry
             args={[1.85, 0.025, 0.01]}
@@ -315,7 +316,6 @@ function Monitor({ activeIndex }) {
           />
         </mesh>
 
-        {/* Software */}
         <Text
           position={[0, 0.03, 0.14]}
           fontSize={0.55}
@@ -327,7 +327,6 @@ function Monitor({ activeIndex }) {
           {active.short}
         </Text>
 
-        {/* UI */}
         <mesh position={[-0.48, -0.45, 0.14]}>
           <boxGeometry
             args={[0.62, 0.025, 0.01]}
@@ -344,7 +343,6 @@ function Monitor({ activeIndex }) {
           <meshBasicMaterial color="#33294d" />
         </mesh>
 
-        {/* Stand */}
         <mesh position={[0, -0.94, 0]}>
           <boxGeometry
             args={[0.14, 0.42, 0.12]}
@@ -357,7 +355,6 @@ function Monitor({ activeIndex }) {
           />
         </mesh>
 
-        {/* Base */}
         <RoundedBox
           args={[0.78, 0.07, 0.28]}
           radius={0.03}
@@ -465,9 +462,29 @@ function Scene() {
     </>
   );
 }
+
 function HeroScene() {
   return (
-    <div className="pointer-events-none absolute inset-y-0 right-0 z-0 hidden w-[60%] md:block lg:w-[63%]">
+    <div
+      className="
+        pointer-events-none
+        absolute
+        right-0
+        top-[38%]
+        z-0
+        block
+        h-[430px]
+        w-full
+
+        md:inset-y-0
+        md:right-0
+        md:top-0
+        md:h-auto
+        md:w-[60%]
+
+        lg:w-[63%]
+      "
+    >
       <Canvas
         dpr={[1, 1.25]}
         camera={{
@@ -484,7 +501,7 @@ function HeroScene() {
 
         <group
           position={[0.1, 0.12, 0]}
-          scale={0.65}
+          scale={0.58}
         >
           <Scene />
         </group>
